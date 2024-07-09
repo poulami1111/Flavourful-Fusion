@@ -25,13 +25,13 @@ const Header = () => {
 // };
 
 const ResturantCard = (props) => {
-    const{resName,cuisine}=props;
+    const{resName,cuisine,rating}=props;
     return (
         <div className="res-card">
              <img  className="res-logo" src="https://media.istockphoto.com/id/1345624336/photo/chicken-biriyani.jpg?s=612x612&w=0&k=20&c=adU_N0P-1SKMQLZu5yu7aPknfLLgbViI8XILqLP92A4=" alt="res-logo"/>
             <h3>{resName}</h3>
             <h4>{cuisine}</h4>
-            <h4>4.3 stars</h4>
+            <h4>{rating}</h4>
             <h5>38 minutes</h5>
         </div>
     );
@@ -42,7 +42,7 @@ const Body = () => {
         <div className="body-items">
             <div className="search">Search</div>
             <div className="Resturants-container">
-                <ResturantCard  resName="Meghana Foods" cuisine="Biriany,North Indian" />
+                <ResturantCard  resName="Meghana Foods" cuisine="Biriany,North Indian" rating="4.4"/>
                 <ResturantCard  resName="KFC" cuisine="Burger,Crispy Chicken"/>
                 
             </div>
