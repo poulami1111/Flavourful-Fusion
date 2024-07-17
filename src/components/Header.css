@@ -14,12 +14,10 @@ nav-items{
     height: 15vh;
     justify-content: space-between;
 }
-.li{
-list-style: none;
-padding-right: 50px;
-}
 
-ul>li{
+
+
+.nav-items>ul>li{
     font-size: 20px;
     font-weight: 500;
     padding-left: 100px;
