@@ -1,5 +1,5 @@
 import React from 'react';
-import './Header.css';
+import '../App.css'
 import { LOGO_URL } from '../utils/constants';
 
 
@@ -7,6 +7,8 @@ import { LOGO_URL } from '../utils/constants';
 
 
 const Header = () => {
+
+    const btnName="Logout";
     return (
         <div className="header"
          style={{
@@ -21,16 +23,13 @@ const Header = () => {
             </div>
             <div className="nav-items">
            
-                <ul style={{
-                    display:'flex',
-                    justifyContent:'center',
-                    alignItems:'center',
-                }}>
+                <ul >
                 
                     <li>Home</li>
                     <li>About Us</li>
                     <li>Contact Us</li>
                     <li>Cart</li>
+                    <button className='Login'>{btnName}</button>
                 </ul>
             </div>
         </div>

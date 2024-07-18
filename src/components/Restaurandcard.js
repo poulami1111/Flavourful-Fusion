@@ -2,7 +2,8 @@ import React from "react";
 import { CDN_URL } from "../utils/constants";
 
 
-const Resturantcard = ({ resData }) => {
+
+const Restaurantcard = ({ resData }) => {
     return (
         <div className="res-card">
             <img
@@ -25,4 +26,4 @@ const Resturantcard = ({ resData }) => {
     );
 };
 
-export default Resturantcard;
+export default Restaurantcard;
